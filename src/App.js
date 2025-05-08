@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Courses from './pages/Courses';
 import AI from './pages/AI';
 import Tech from './pages/Tech';
+import Tools from './pages/Tools';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/cursos" element={<Courses />} />
             <Route path="/ia" element={<AI />} />
             <Route path="/tecnologia" element={<Tech />} />
+            <Route path="/ferramentas" element={<Tools />} />
           </Routes>
         </main>
       </div>

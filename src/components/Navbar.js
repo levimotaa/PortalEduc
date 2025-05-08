@@ -43,6 +43,18 @@ const Navbar = () => {
           >
             Tecnologia e Inovação
           </NavLink>
+          <NavLink 
+            to="/ferramentas" 
+            className={({ isActive }) => 
+              `py-4 px-2 font-medium border-b-2 transition-colors duration-300 ${
+                isActive 
+                  ? 'border-blue-500 text-blue-600' 
+                  : 'border-transparent text-gray-600 hover:text-blue-500 hover:border-blue-300'
+              }`
+            }
+          >
+            Ferramentas
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -90,6 +90,12 @@ const Header = () => {
             >
               Tecnologia e Inovação
             </Link>
+            <Link 
+              to="/ferramentas" 
+              className="text-white text-xl hover:text-blue-300"
+            >
+              Ferramentas
+            </Link>
           </div>
         </div>
       )}
