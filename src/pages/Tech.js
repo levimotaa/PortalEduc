@@ -9,7 +9,7 @@ const Tech = () => {
     {
       title: "Tecnologias Educacionais Inovadoras",
       source: "Fundação Bradesco",
-      link: "https://www.ev.org.br/cursos/tecnologias-educacionais"
+      link: "https://www.ev.org.br/areas-de-interesse/educacao-e-tecnologia"
     },
     {
       title: "Google Sala de Aula (Google Classroom)",
@@ -19,7 +19,7 @@ const Tech = () => {
     {
       title: "Ferramentas Digitais para Aprendizagem Ativa",
       source: "Coursera",
-      link: "https://www.coursera.org/learn/ferramentas-digitais-educacao"
+      link: "https://www.coursera.org/learn/ensino-hibrido"
     }
   ];
 

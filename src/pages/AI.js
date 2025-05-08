@@ -13,8 +13,8 @@ const AI = () => {
     },
     {
       title: "Como usar ChatGPT na Educação",
-      source: "YouTube - Canal Ensino Tecnológico",
-      link: "https://www.youtube.com/watch?v=exemplo"
+      source: "YouTube - Canal Conexão Filosófica",
+      link: "https://www.youtube.com/watch?v=iE9DOhrJlpI&ab_channel=Conex%C3%A3oFilos%C3%B3fica"
     },
     {
       title: "Ferramentas de IA para Planejamento de Aulas",
