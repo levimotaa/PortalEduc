@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importa o Link do react-router-dom
 
 const Hero = () => {
   return (
@@ -12,12 +13,12 @@ const Hero = () => {
           e levar mais tecnologia para a sala de aula.
         </p>
         <div className="flex justify-center space-x-4">
-          <a 
-            href="PortalEduc/cursos" 
+          <Link 
+            to="/cursos" // Use "to" em vez de "href" para navegação interna
             className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-300"
           >
             Explorar Cursos
-          </a>
+          </Link>
         </div>
       </div>
     </div>
