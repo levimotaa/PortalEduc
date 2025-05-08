@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const CourseSection = ({ title, description, courses, filterText = '' }) => {
   const [favorites, setFavorites] = useState([]);
@@ -42,7 +43,14 @@ const CourseSection = ({ title, description, courses, filterText = '' }) => {
 
       <div className="space-y-4">
         {filteredCourses.map((course, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md card-hover relative">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: index * 0.05 }}
+            whileHover={{ scale: 1.02 }}
+            className="bg-white p-6 rounded-lg shadow-md card-hover relative"
+          >
             <button
               onClick={() => toggleFavorite(course.title)}
               className="absolute top-4 right-4 text-xl"
@@ -60,7 +68,7 @@ const CourseSection = ({ title, description, courses, filterText = '' }) => {
             >
               Acessar curso
             </a>
-          </div>
+          </motion.div>
         ))}
         {filteredCourses.length === 0 && (
           <p className="text-gray-500 italic">Nenhum curso encontrado.</p>

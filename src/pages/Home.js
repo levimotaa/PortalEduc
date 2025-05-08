@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import CourseSection from '../components/CourseSection';
 import SearchBar from '../components/SearchBar';
@@ -25,7 +26,12 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <Hero />
 
       <div className="max-w-4xl mx-auto">
@@ -38,7 +44,7 @@ const Home = () => {
           filterText={search}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
