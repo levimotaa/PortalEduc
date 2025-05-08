@@ -23,6 +23,34 @@ const Tech = () => {
     }
   ];
 
+  const dynamicTools = [
+    {
+      title: "Kahoot!",
+      source: "Crie quizzes interativos para usar em sala de aula",
+      link: "https://kahoot.com/schools/"
+    },
+    {
+      title: "Quizizz",
+      source: "Avaliações e atividades gamificadas para alunos",
+      link: "https://quizizz.com/"
+    },
+    {
+      title: "Mentimeter",
+      source: "Interações em tempo real com enquetes, nuvens de palavras e mais",
+      link: "https://www.mentimeter.com/"
+    },
+    {
+      title: "Educaplay",
+      source: "Crie jogos educacionais como cruzadinhas, testes e mapas interativos",
+      link: "https://www.educaplay.com/"
+    },
+    {
+      title: "Wordwall",
+      source: "Ferramenta para criação de atividades interativas e impressas",
+      link: "https://wordwall.net/pt"
+    }
+  ];
+
   return (
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-800 mb-8">Tecnologia e Inovação na Educação</h1>
@@ -39,8 +67,16 @@ const Tech = () => {
         courses={techCourses}
         filterText={search}
       />
+
+      <CourseSection
+        title="Ferramentas para Ensino Dinâmico"
+        description="Plataformas que incentivam o engajamento dos alunos com jogos, quizzes e interações:"
+        courses={dynamicTools}
+        filterText={search}
+      />
     </div>
   );
 };
 
 export default Tech;
+
