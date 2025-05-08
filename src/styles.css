@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  @apply bg-gray-50 dark:bg-slate-900 transition-colors duration-300;
+}
+
+
+/* Animação para links */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Estilo para links externos */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+}
+
+/* Container padrão */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Efeito hover para cards */
+.card-hover {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+/* Modo escuro mais moderno e contrastante */
+.dark body {
+  background-color: #0f172a; /* Azul muito escuro */
+  color: #e2e8f0; /* Cinza claro */
+}
+
+.dark a {
+  color: #38bdf8; /* Azul claro neon */
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4 {
+  color: #f8fafc; /* Quase branco */
+}
+
+.dark p {
+  color: #cbd5e1;
+}
+
+.dark .card-hover {
+  @apply bg-slate-800 text-white border border-slate-700;
+}
+
+.dark input, .dark textarea {
+  background-color: #1e293b; /* Fundo escuro suave */
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+.dark .container {
+  background-color: transparent;
+}
+
+.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+.dark .text-gray-800 {
+  color: #f8fafc !important;
+}
+
+.dark .shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.05),
+              0 2px 4px -2px rgba(255, 255, 255, 0.05);
+}
+
